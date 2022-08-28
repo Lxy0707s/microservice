@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="netty-client" />
+        <module name="manager-server-v2" />
+        <module name="userservice" />
+        <module name="api-gateway" />
+        <module name="netty-client02" />
+        <module name="consul-provider" />
+        <module name="eureka-server" />
+        <module name="manager-server" />
+        <module name="consumer-service" />
+        <module name="netty-server" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="17">
+      <module name="api-gateway" target="17" />
+      <module name="consul-provider" target="17" />
+      <module name="consumer-service" target="17" />
+      <module name="eureka-server" target="17" />
+      <module name="manager-server" target="17" />
+      <module name="manager-server-v2" target="17" />
+      <module name="microservice" target="17" />
+      <module name="netty-client" target="17" />
+      <module name="netty-client02" target="17" />
+      <module name="netty-server" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api-gateway" options="-parameters" />
+      <module name="consul-provider" options="-parameters" />
+      <module name="consumer-service" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
+      <module name="manager-server" options="-parameters" />
+      <module name="manager-server-v2" options="-parameters" />
+      <module name="microservice" options="-parameters" />
+      <module name="netty-client" options="-parameters" />
+      <module name="netty-client02" options="-parameters" />
+      <module name="netty-server" options="-parameters" />
+    </option>
+  </component>
+</project>

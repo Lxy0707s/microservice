@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/api-gateway/api-gateway.iml" filepath="$PROJECT_DIR$/api-gateway/api-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consul-provider/consul-provider.iml" filepath="$PROJECT_DIR$/consul-provider/consul-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consumer-service/consumer-service.iml" filepath="$PROJECT_DIR$/consumer-service/consumer-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/manager-server/manager-server.iml" filepath="$PROJECT_DIR$/manager-server/manager-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/manager-server-v2/manager-server-v2.iml" filepath="$PROJECT_DIR$/manager-server-v2/manager-server-v2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice.iml" filepath="$PROJECT_DIR$/microservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/netty-client/netty-client.iml" filepath="$PROJECT_DIR$/netty-client/netty-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/netty-client02/netty-client02.iml" filepath="$PROJECT_DIR$/netty-client02/netty-client02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/netty-server/netty-server.iml" filepath="$PROJECT_DIR$/netty-server/netty-server.iml" />
+    </modules>
+  </component>
+</project>

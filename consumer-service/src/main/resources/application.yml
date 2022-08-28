@@ -1,0 +1,24 @@
+#自定义微服务名称
+spring:
+  application:
+    name: consumer-service
+#端口
+server:
+  port: 8082
+  #根据刚才定义的注册中心的对外暴露的地址填写。
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+      fetch-registry: true
+      #每隔3秒拉取最新的注册列表（默认30秒）
+      registry-fetch-interval-seconds: 3
+  #心跳间隔时间为3秒（默认30秒）
+  instance:
+    lease-renewal-interval-in-seconds: 3
+    #6秒没有接收到心跳则剔除微服务（默认90秒）
+    lease-expiration-duration-in-seconds: 6
+
+ribbon:
+  eureka:
+    enabled: true

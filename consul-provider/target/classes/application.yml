@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: springboot-consul-provider
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        enabled: true
+        heartbeat:
+          enabled: true
+
+server:
+  port: 8091

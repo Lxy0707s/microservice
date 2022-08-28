@@ -1,0 +1,48 @@
+#自定义微服务名称
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    discovery:
+      enabled: true
+    gateway:
+      discovery:
+        locator:
+          enabled: true #是否与服务中心的发现组件进行整合
+          lower-case-service-id: true
+      httpclient:
+        pool:
+          max-connections: 500
+          max-idle-time: 10000
+      routes:
+        # 路由id，可以任意设置
+        - id: microservice01
+          uri: lb://consumer-service/
+          predicates:
+            - Path=/microservice01/** #断言，路径相匹配的进行路由---断言也就是匹配方式，会跳转上面的uri
+          filters: #这个必须写
+            - StripPrefix=1  #  请求/name/bar/foo
+
+  #端口
+server:
+  port: 7001
+  #根据刚才定义的注册中心的对外暴露的地址填写。
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*" # 暴露所有端点
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka/
+      register-with-eureka: true
+      fetch-registry: true
+    #每隔3秒拉取最新的注册列表（默认30秒）
+    registry-fetch-interval-seconds: 3
+  #心跳间隔时间为3秒（默认30秒）
+  instance:
+    prefer-ip-address: true
+    hostname: localhost
